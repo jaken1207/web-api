@@ -3,6 +3,7 @@ const express = require("express");
 const app = express();
 app.use(express.json());
 
+//サーバーを常に起動しておく（いつリクエストが来てもいいように）
 app.listen(3000, console.log("サーバーが開始されました"));
 
 app.get("/", (req, res) => {
